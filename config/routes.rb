@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   get("/departments", { :controller => "departments", :action => "index" })
   
-  post("/modify_department/:path_id", { :controller => "departments", :action => "update" })
+  get("/modify_department/:path_id", { :controller => "departments", :action => "update" })
 
   get("/delete_department/:path_id", { :controller => "departments", :action => "destroy" })
 
